@@ -10,9 +10,13 @@
 #include "IMatrix.h"
 #include <vector>
 
+#include <set>
+
 class GMatrix : public IMatrix {
+    
 private:
     std::vector<std::vector<double> > itsValue;
+    std::set<double> theSet;
 public:
 
     int getColumnSize() {
